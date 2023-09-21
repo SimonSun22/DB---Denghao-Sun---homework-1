@@ -1,4 +1,6 @@
 # Author: Denghao Sun
+# UID: N14485339
+# NetID: ds6963
 
 # This is a test script to check if the files are stored properly in the database
 
@@ -13,14 +15,14 @@ def retrieve_pdf_from_gridfs(pdf_id, filename):
         pdf_file.write(pdf_data)
 
 client = MongoClient('mongodb://localhost:27017/')
-db = client['lab_experiments']
+db = client['candidates']
 
 fs = gridfs.GridFS(db)
 
-experiments = db['experiments'].find()
+candidates = db['candidates_pool'].find()
 
-for experiment in experiments:
-    pdf_id = experiment["PDF_GridFS_ID"]
-    output_filename = "retrieved_" + experiment["Description"].replace(" ", "_") + ".pdf"
+for candidate in candidates:
+    pdf_id = candidate["PDF_GridFS_ID"]
+    output_filename = "retrieved_" + candidate["Name"] + ".pdf"
     retrieve_pdf_from_gridfs(pdf_id, output_filename)
-    print(f"PDF for Experiment {experiment['ExperimentID']} saved as {output_filename}")
+    print(f"PDF for Candidate {candidate['CandidateID']} saved as {output_filename}")

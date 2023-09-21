@@ -1,4 +1,6 @@
 # Author: Denghao Sun
+# UID: N14485339
+# NetID: ds6963
 
 import pandas as pd
 from pymongo import MongoClient
@@ -15,7 +17,7 @@ experiments_collection = db['candidates_pool']
 
 fs = gridfs.GridFS(db)
 
-data_df = pd.read_csv('SampleCandidatesPool.csv')
+data_df = pd.read_csv('Denghao Sun_SampleCandidatesPool.csv')
 
 # Inserting CSV data and associated PDF links to MongoDB
 for index, row in data_df.iterrows():
