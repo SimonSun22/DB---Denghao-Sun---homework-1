@@ -4,6 +4,12 @@
 
 A sample program demonstrating how to migrate data from CSV files and associated PDFs into MongoDB. Developed by Denghao Sun.
 
+Path to the source code:
+
+[MongoDB_Migration_CSV.py](https://github.com/SimonSun22/DB---Denghao-Sun---homework-1/blob/main/MongoDB/MongoDB_Migration_CSV.py)
+
+[getfile.py](https://github.com/SimonSun22/DB---Denghao-Sun---homework-1/blob/main/MongoDB/getfile.py)
+
 ## Features
 
 - **CSV to MongoDB Migration**:
@@ -25,6 +31,12 @@ A sample program demonstrating how to migrate data from CSV files and associated
 ## SQLite Data Migration Sample
 
 A sample program demonstrating how to migrate data from CSV files and associated PDFs into SQLite. Developed by Denghao Sun.
+
+Path to the source code:
+
+[SQLite_Migration_CSV.py](https://github.com/SimonSun22/DB---Denghao-Sun---homework-1/blob/main/SQLite/SQLite_Migration_CSV.py)
+
+[getfile.py](https://github.com/SimonSun22/DB---Denghao-Sun---homework-1/blob/main/SQLite/getfile.py)
 
 ## Features
 
