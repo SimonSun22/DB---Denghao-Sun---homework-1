@@ -17,7 +17,7 @@ A sample program demonstrating how to migrate data from CSV files and associated
 ## Screenshots
 
 ### Running the Commands
-![Command Execution Screenshot](MongoDB/Screenshot 2023-09-21 at 1.30.33 AM.png)
+![Command Execution Screenshot](MongoDB/Denghao Sun_command.png)
 
 ### Comparing Result with Original Data
 ![Validation Screenshot](MongoDB/Denghao Sun_validation.png)
